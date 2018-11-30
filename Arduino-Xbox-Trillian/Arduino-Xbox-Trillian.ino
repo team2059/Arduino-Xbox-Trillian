@@ -43,28 +43,22 @@ const int frontRightPin = 38; //Front Right Motor pin
 int frontRightSpeed = 1500; //Front Right Motor starting speed
 Servo frontRightMotor; //Create the frontRightMotor object for the servo library
 
-const int shooterPin = 42;  //Top Roller Motor pin
+const int shooterPin = 42;  //Frizbee Launcher Motor pin
 //1460 for no running motors, no buttons held.
 //1600 for low power, "X" button held.
 //1800 for medium power, "A" button held.
 //2000 for high power, "B" button held.
-int shooterSpeed = 1500;  //Top Roller Motor starting speed
-Servo shooterMotor; //Create the topRollerMotor object for the servo library
+int shooterSpeed = 1500;  //Frizbee Launcher Motor starting speed
+Servo shooterMotor; //Create the shooterPin object for the servo library
 
 //Non-PWM Outputs
-const int pistonExtendRelayPin = 22;
+const int pistonExtendRelayPin = 22;  //Relay pin to extend the shooter piston
 
-const int pistonRetractRelayPin = 26;
+const int pistonRetractRelayPin = 26; //Relay pin to retract the shooter piston
 
-const int compressorRelayPin = 36;
+const int compressorRelayPin = 36;  //Relay pin to control power to the air compressor
 
-const int airPressureSensorPin = 24;
-
-const int redLEDPin = 44;
-
-const int greenLEDPin = 45;
-
-const int blueLEDPin = 46;
+const int airPressureSensorPin = 24;  //Input pin for the air pressure cut-off switch
 
 //Use the Xbox controller number 0, I am only using one controller
 const int controlNum = 0;
@@ -119,10 +113,6 @@ void setup()
   pinMode(airPressureSensorPin, INPUT_PULLUP);
   pinMode(pistonExtendRelayPin, OUTPUT);
   pinMode(pistonRetractRelayPin, OUTPUT);
-
-  pinMode(redLEDPin, OUTPUT);
-  pinMode(greenLEDPin, OUTPUT);
-  pinMode(blueLEDPin, OUTPUT);
 
   Serial.begin(115200);
 
