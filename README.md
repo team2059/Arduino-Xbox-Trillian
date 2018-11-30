@@ -16,3 +16,5 @@ These are the pins on the arduino which you connect to the signal wire of the pw
 | 26  | Relay pin to retract the shooter piston |
 | 36  | Relay pin to control power to the air compressor |
 | 24  | Input pin for the air pressure cut-off switch |
+
+There is smoothing code in the arduino sketch which is unused. This smoothing code will be used to gradually decrease power to the motor controllers when the driver suddenly stops moving forward or backward. This code is currently not implemented as the code to run the motors will need to be greatly modified.
