@@ -3,7 +3,7 @@ Arduino code for the wireless xbox controller system used on Trillian.
 
 You must install the libraries in the "Required Libraries" folder to compile the arduino sketch.
 
-These are the pins on the arduino which you connect to the signal of the pwm cable comming from either the motor controller, relay, or sensor.
+These are the pins on the arduino which you connect to the signal wire of the pwm cable comming from either the motor controller, relay, or sensor.
 
 | Arduino Pin Number | Description |
 | ------------- | ------------- |
