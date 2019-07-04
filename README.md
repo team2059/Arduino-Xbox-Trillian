@@ -11,7 +11,7 @@ These are the pins on the arduino which you connect to the signal wire of the pw
 | 43  | Front Left motor controller pin |
 | 32  | Back Right motor controller pin |
 | 38  | Front Right motor controller pin |
-| 42  | Back Left motor controller pin |
+| 42  | Frizbee launcher motor controller pin |
 | 22  | Relay pin to extend the shooter piston |
 | 26  | Relay pin to retract the shooter piston |
 | 36  | Relay pin to control power to the air compressor |
